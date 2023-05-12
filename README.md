@@ -1,2 +1,1 @@
-# ultithread-Polkadot-Brute-Force
-ultithread Polkadot Brute Force
+#  multithread-Polkadot-Brute-Force
