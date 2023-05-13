@@ -1,0 +1,27 @@
+{
+  "name": "multithread-polkadot-brute-force",
+  "version": "1.4.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorvusCodex/Multithread-Polkadot-Brute-Force.git"
+  },
+  "author": "CorvusCodex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CorvusCodex/Multithread-Polkadot-Brute-Force/issues"
+  },
+  "homepage": "https://github.com/CorvusCodex/Multithread-Polkadot-Brute-Force#readme",
+  "dependencies": {
+    "@polkadot/keyring": "^12.2.1",
+    "@polkadot/util-crypto": "^12.2.1",
+    "blessed": "^0.1.81",
+    "cluster": "^0.7.7",
+    "coinkey": "^3.0.0",
+    "crypto": "^1.0.1"
+  }
+}
