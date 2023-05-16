@@ -28,7 +28,14 @@ addresses = new Set();
 // Reading data from a file named 'data.txt'
 const data = fs.readFileSync('./data.txt');
 // Splitting the data by new line and adding each address to the Set
-data.toString().split("\n").forEach(address => addresses.add(address));
+data.toString().split("\n").forEach(address => {
+    if (address.startsWith('0x')) {
+        addresses.add(address);
+    } else {
+        console.error('Error: addresses are not in correct format. Adreess must be in Generic Substrate format and starts with "5".');
+        process.exit(1);
+    }
+});
 
 // Initializing an object to store counts for each worker
 let counts = {};
