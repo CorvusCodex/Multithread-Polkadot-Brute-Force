@@ -29,7 +29,7 @@ addresses = new Set();
 const data = fs.readFileSync('./data.txt');
 // Splitting the data by new line and adding each address to the Set
 data.toString().split("\n").forEach(address => {
-    if (address.startsWith('0x')) {
+    if (address.startsWith('5')) {
         addresses.add(address);
     } else {
         console.error('Error: addresses are not in correct format. Adreess must be in Generic Substrate format and starts with "5".');
